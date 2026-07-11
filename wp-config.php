@@ -14,21 +14,10 @@
  * @package WordPress
  */
 
-$db = parse_url($_ENV["DATABASE_URL"]);
-
-define('DB_NAME', trim($db["path"],"/"));
-define('DB_USER', $db["user"]);
-define('DB_PASSWORD', $db["pass"]);
-define('DB_HOST', $db["host"]);
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-
-/**#@+
- * Authentication Unique Keys and Salts.
+define('DB_NAME', 'your_database_name');
+define('DB_USER', 'your_database_user');
+define('DB_PASSWORD', 'your_database_password');
+define('DB_HOST', 'your_database_host');
  *
  * Change these to different unique phrases!
  * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
